@@ -3,11 +3,6 @@
 #include <string.h>
 int main(){
     FILE *fp = fopen("lotto.txt", "r");
-    if (fp == NULL) {
-        printf("找不到檔案！請確認名稱是否正確。\n");
-        return 1;
-    }
-
     int win_nums[3];
     printf("請輸入中獎號碼三個：");
     scanf("%d %d %d", &win_nums[0], &win_nums[1], &win_nums[2]);
