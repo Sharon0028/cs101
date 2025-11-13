@@ -3,8 +3,8 @@
 #include <time.h>
 #include <string.h>
 
-void generate_lotto(); // 產生樂透檔案
-void check_lotto();    // 讀檔判斷中獎
+void generate_lotto(); 
+void check_lotto();    
 
 int main() {
     generate_lotto();
