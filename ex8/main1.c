@@ -1,13 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-int main() {
-    char filename[64];
-    printf("請輸入要開獎的樂透檔案名稱 (例如 lotto[00001].txt): ");
-    scanf("%s", filename);
-
-    FILE *fp = fopen(filename, "r");
+int main(){
+    FILE *fp = fopen("lotto.txt", "r");
     if (fp == NULL) {
         printf("找不到檔案！請確認名稱是否正確。\n");
         return 1;
